@@ -4,7 +4,8 @@
 <%@ page import="java.util.List" %>
 
 <%
-List<GuestbookVo>list=(List<GuestbookVo>)request.getAttribute("list");
+	List<GuestbookVo> list=(List<GuestbookVo>)request.getAttribute("list");
+	//						형변환해줌			리스트에 리퉤스트내에 set한거 get할꺼야
 %>
 
 <!-- 보내기 -->

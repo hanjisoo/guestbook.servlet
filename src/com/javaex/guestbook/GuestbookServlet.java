@@ -69,8 +69,9 @@ public class GuestbookServlet extends HttpServlet {
 			
 			GuestbookDao dao=new GuestbookDao();
 			List<GuestbookVo> list=dao.getList();
-			
+			/*vo형태로 데이터받아옴*/
 			request.setAttribute("list", list);
+								/*별명,	위에 vo에서 받은 list를 실어줘*/
 			RequestDispatcher rd=request.getRequestDispatcher("list.jsp");
 			rd.forward(request, response);
 			
