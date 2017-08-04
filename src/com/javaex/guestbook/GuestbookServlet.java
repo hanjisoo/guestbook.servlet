@@ -59,7 +59,7 @@ public class GuestbookServlet extends HttpServlet {
 		}else if("deleteform".equals(actionName)) {
 			System.out.println("삭제형식");
 			
-			RequestDispatcher rd=request.getRequestDispatcher("deleteform.jsp");
+			RequestDispatcher rd=request.getRequestDispatcher("/WEB-INF/deleteform.jsp");
 			rd.forward(request, response);
 			
 			
@@ -72,7 +72,7 @@ public class GuestbookServlet extends HttpServlet {
 			/*vo형태로 데이터받아옴*/
 			request.setAttribute("list", list);
 								/*별명,	위에 vo에서 받은 list를 실어줘*/
-			RequestDispatcher rd=request.getRequestDispatcher("list.jsp");
+			RequestDispatcher rd=request.getRequestDispatcher("/WEB-INF/list.jsp");
 			rd.forward(request, response);
 			
 		}

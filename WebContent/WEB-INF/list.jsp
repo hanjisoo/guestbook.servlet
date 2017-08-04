@@ -42,8 +42,8 @@
 				<td>${vo.no}</td>
 				<td>${vo.name }</td>
 				<td>${vo.regDate }</td>
-				<td><a href="deleteform.jsp?no=${vo.no}">삭제</a></td>
-			</tr>               <!-- 삭제누르면 해당 번호가 삭제되야하고 그 번호 페이지로 연결되야지 -->
+				<td><a href="book?a=deleteform&no=${vo.no}">삭제</a></td>
+			</tr>            
 			<tr>
 				<td colspan=4>안녕하세요~<br/>${vo.content }</td>
 															
